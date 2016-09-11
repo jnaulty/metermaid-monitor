@@ -1,7 +1,8 @@
 # metermaid-monitor
-Avoidance, Awareness, and Prevention. Tensorflow, PiCamera, and Metermaids. A Citizen's lovestory.
+I don't like cars. I like oppressive regimes even less. 
+Avoidance, Awareness, and Prevention Using Tensorflow, PiCamera, and Metermaids. 
 
-The purpose of this project was to provide a cheap alternative to worry about parking. People who park in residential areas, especially in `2 hour` limited parking will know the desire to park for as long as available. Normally what ruins that availability is the dreadful driveby of a metermaid [`Interceptor`](https://www.google.com/search?q=images+interceptor+metermaid&safe=off&espv=2&biw=1321&bih=659&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjjob2Ap4fPAhVfVWMKHaieC-YQ_AUIBigB). With this set of tools, one can park their car, knowing that a notification will arrive via text message notifying them of a passing metermaid. This _should_ mark their 'official' 2 hour parking time limit. As the metermaid should only be able to assume the car had just parked there.
+The purpose of this project was to provide a lazy way to avoid parking tickets. People (like me) who park in residential areas, especially in `2 hour` limited parking know the desire to park for as long as possible without having to move every two hours. Normally what ruins that availability is the dreadful driveby of a metermaid [`Interceptor`](https://www.google.com/search?q=images+interceptor+metermaid&safe=off&espv=2&biw=1321&bih=659&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjjob2Ap4fPAhVfVWMKHaieC-YQ_AUIBigB). With this set of tools, one can park their car, knowing that a notification will arrive via text message notifying them of a passing metermaid. This _should_ mark their 'official' 2 hour parking time limit. As the metermaid should only be able to assume the car had just parked there.
 
 We combined Tensorflow image classification with a raspberry pi motion detection and speed measuring program.
 
