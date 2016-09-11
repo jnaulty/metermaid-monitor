@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Metermaid-monitor by jnaulty</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Metermaid-monitor</h1>
+        <h2>Parking by the People For the People</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/jnaulty/metermaid-monitor/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/jnaulty/metermaid-monitor/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/jnaulty/metermaid-monitor" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a id="welcome-to-peoplesparkingspace" class="anchor" href="#welcome-to-peoplesparkingspace" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Peoplesparking.space</h3>
+
+<h3>
+<a id="parking-for-the-people" class="anchor" href="#parking-for-the-people" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parking for the People</h3>
+
+<p>Have you recently moved into a neighborhood and afraid to bring your car for fear of the oppressive metermaid? I feel your pain. </p>
+
+<p>I don't like cars. I like oppressive regimes even less. </p>
+
+<p><strong>tl;dr</strong>
+Avoidance, Awareness, and Prevention of parking tickets using Tensorflow, PiCamera, and Metermaids. </p>
+
+<p>The purpose of this project was to provide a lazy way to avoid parking tickets. People (like me) who park in residential areas, especially in <code>2 hour</code> limited parking know the desire to park for as long as possible without having to move every two hours. Normally what ruins that availability is the dreadful driveby of a metermaid <a href="https://www.google.com/search?q=images+interceptor+metermaid&amp;safe=off&amp;espv=2&amp;biw=1321&amp;bih=659&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjjob2Ap4fPAhVfVWMKHaieC-YQ_AUIBigB"><code>Interceptor</code></a>. With this set of tools, one can park their car, knowing that a notification will arrive via text message notifying them of a passing metermaid. This <em>should</em> mark their 'official' 2 hour parking time limit. As the metermaid should only be able to assume the car had just parked there.</p>
+
+<p>We combined Tensorflow image classification with a raspberry pi motion detection and speed measuring program.</p>
+
+<p>When Image is captured (moving car is in field of view), the image is sent for analysis to an instance running Tensorflow, with trained data.
+If image is a match, a message is sent via twilio with a link to the image for human verification.</p>
+
+<p>PiCamera Car Monitor --&gt; TensorFlow Classification --&gt; SMS Message</p>
+
+<ul>
+<li>Requires Installation of OpenCV 3.0.0 and Python3 and wifi-hotspot (for raspberry pi)</li>
+<li>Tensorflow was ran in docker following this <a href="https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html?index=..%2F..%2Findex#5">tutorial</a>
+</li>
+<li>Pictures were shamelessly downloadedfrom Google Images. </li>
+</ul>
+
+<p>**This is a free, open-source project and the developers are in <em>no_way</em> accountable for parking tickets because of rebellious, citation-breaking citizens. </p>
+
+<p>Special Thanks</p>
+
+<ul>
+<li>Google <a href="https://www.tensorflow.org/">TensorFlow</a>
+</li>
+<li>
+<a href="https://gregtinkers.wordpress.com/2016/03/25/car-speed-detector/">Greg Tinkers</a> for his blog and car speed script.</li>
+<li>
+<a href="https://github.com/psukhanov">@psukhanov</a> Partner in <del>parking</del> crime.</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
