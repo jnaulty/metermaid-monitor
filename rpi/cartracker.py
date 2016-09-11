@@ -268,9 +268,11 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
                     cv2.putText(image, "%.0f mph" % last_mph,
                         (cntr_x , int(IMAGEHEIGHT * 0.2)), cv2.FONT_HERSHEY_SIMPLEX, 2.00, (0, 255, 0), 3)
                     # and save the image to disk
-                    cv2.imwrite("car_at_"+datetime.datetime.now().strftime("%Y%m%d_%H%M%S")+".jpg",
-                        image)
+                    image_name = "car_at_"+datetime.datetime.now().strftime("%Y%m%d_%H%M%S")+".jpg"
+                    cv2.imwrite(image_name, image)
                     state = SAVING
+                    # when in saving state, we can + should run TensorFlow on this.
+                    subprocess.call("./aws_upload %s" % image_name)
                 # if the object hasn't reached the end of the monitored area, just remember the speed 
                 # and its last position
                 last_mph = mph
