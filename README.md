@@ -11,7 +11,7 @@ If image is a match, a message is sent via twilio with a link to the image for h
 
 PiCamera Car Monitor --> TensorFlow Classification --> SMS Message
 
-- Requires Installation of OpenCV 3.0.0 and Python3.
+- Requires Installation of OpenCV 3.0.0 and Python3 and wifi-hotspot (for raspberry pi)
 - Tensorflow was ran in docker following this [tutorial](https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/index.html?index=..%2F..%2Findex#5)
 - Pictures were shamelessly downloadedfrom Google Images. 
 
